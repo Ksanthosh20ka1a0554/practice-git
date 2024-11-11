@@ -16,7 +16,7 @@ jobs:
         curl -fsSL https://get.docker.com -o get-docker.sh
         sh get-docker.sh
         # Pull the Docker image
-        sudo docker pull santhosh9515/grampanchayat
+        docker pull santhosh9515/grampanchayat
         
         # Run the Docker container
         sudo docker run -d --name validation-container santhosh9515/grampanchayat
