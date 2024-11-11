@@ -25,10 +25,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
         # Pull the Docker image
-        sudo docker pull santhosh9515/grampanchayat
+        sudo docker pull santhosh9515/grampanchayat:11
         
         # Run the Docker container
-        sudo docker run -d --name validation-container santhosh9515/grampanchayat
+        sudo docker run -d --name validation-container santhosh9515/grampanchayat:11
 
     - name: Send POST Request to /validateuser
       run: |
